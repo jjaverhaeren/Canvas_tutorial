@@ -93,13 +93,24 @@ class Circle {
     }
     this.y += this.dy;
 
+    //interactivity
+    if (
+      mouse.x - this.x < 50 &&
+      mouse.x - this.x > -50 &&
+      mouse.y - this.y < 50 &&
+      mouse.y - this.y > -50
+    ) {
+      this.radius += 1;
+    } else if (this.radius > 2) {
+      this.radius -= 1;
+    }
     this.draw();
   }
 }
 
 const circleArray = [];
 
-for (i = 0; i < 50; i++) {
+for (i = 0; i < 200; i++) {
   let radius = Math.random() * 60 + 10;
   let x = Math.random() * (innerWidth - radius * 2) + radius;
   let y = Math.random() * (innerHeight - radius * 2) + radius;
