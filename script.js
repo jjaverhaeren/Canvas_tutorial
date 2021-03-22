@@ -64,7 +64,12 @@ class Circle {
   }
 
   draw() {
-    const gradient = context.createLinearGradient(0, 0, innerWidth, 0);
+    const gradient = context.createLinearGradient(
+      0,
+      0,
+      innerWidth,
+      innerHeight
+    );
     gradient.addColorStop(0, this.color);
     gradient.addColorStop(1, "transparent");
     context.fillStyle = gradient;
