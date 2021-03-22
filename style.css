@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: linear-gradient(
+    to bottom right,
+    black,
+    rgb(59, 59, 196)
+  );
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+#cage {
+  width: 200px;
+  height: 200px;
+  margin: 100 auto;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+test {
+  background-color: rgb(25, 145, 125);
+}
